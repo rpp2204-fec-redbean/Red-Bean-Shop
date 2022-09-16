@@ -8,7 +8,7 @@ import ReviewsModule from './reviews_module/ReviewsModule.jsx';
 import Topbar from './overview_module/Topbar.jsx';
 
 function App() {
-  const [product_id, setProduct_id] = useState(71697);
+  const [product_id, setProduct_id] = useState(71701);
   const [productName, setProductName] = useState('Heir Force Ones');
 
   const queryParams = {
