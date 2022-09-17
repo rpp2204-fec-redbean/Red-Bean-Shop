@@ -22,8 +22,6 @@ const initialState = {
 const helpers = {
   handleCountShown: (displayedCount, reviewCount, setDisplayedCount) => {
     if (displayedCount >= reviewCount.current) {
-      //add the next line, if broken, remove
-      const document = this;
       const element = document.getElementById('more-reviews');
       element.remove();
     }
@@ -48,16 +46,17 @@ const helpers = {
 
     const filtersIndx = Object.values(currentFilters).indexOf(true);
     if (filtersIndx >= 0) {
-      for (let i = 0; i < reviews.current.length; i++) {
-        if (currentFilters[i].rating) {
-          filteredReviews.push(reviews.current[i]);
+      // for (let i = 0; i < reviews.length; i++) {
+      //   console.log(reviews);
+      //   // if (currentFilters[reviews[i].rating]) {
+      //   //   filteredReviews.push(reviews.current[i]);
+      //   // }
+      // }
+      for (let review of reviews.current) {
+        if (currentFilters[review.rating]) {
+          filteredReviews.push(review);
         }
       }
-      // for (let review of reviews.current) {
-      //   if (currentFilters[review.rating]) {
-      //     filteredReviews.push(review);
-      //   }
-      // }
       setReviewsShown(filteredReviews);
       return;
     }
