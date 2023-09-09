@@ -40,4 +40,13 @@ To get Red Bean Shop up and running locally on your machine, follow the instruct
 
 ```bash
 git clone https://github.com/yourusername/RedBeanShop.git
+```
+
+## Team Members
+  * Questions and Answers widget / SSR Integration / Lighthouse Optimizations
+    * [Ricky Pirruccio](https://github.com/RPirruccio)
+  * Reviews widget / Lighthouse Optimizations
+    * [Anthony Merino](https://github.com/chiElephant)
+  * Overview widget
+    * [Javier Campos](https://github.com/Loxiiii)
 
